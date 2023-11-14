@@ -2,29 +2,28 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <link rel="stylesheet" href="leaflet-1.7.1/leaflet.css" />
+    <script src="leaflet-1.7.1/leaflet-src.js"></script>
+    <script src="leaflet-1.7.1/leaflet-providers.js"></script>
+    <script src="leaflet-1.7.1/leaflet-image.js"></script>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" type="text/css" href="assets/css/style.css"/>
     <title>Document</title>
 </head>
 <body>
-    <div id="form">
-        <input type="text" placeholder="Wyszukaj" name="search" id="searchText"/>
-        <div id="tasks">
-        </div>
-        <div id="add">
-            <div class="addGroup">
-                <span class="topLabel">Zadanie</span>
-                <input type="text" id="taskName" placeholder="Nazwa zadania..."/>
-            </div>
-            <div class="addGroup">
-                <span class="topLabel">Zadanie</span>
-                <input type="date" id="taskTime" placeholder="dd-mm-rrrr"/>
-            </div>
-            <div class="addGroup">
-                <span class="topLabel">Zadanie</span>
-                <button id="addTask">Dodaj</button>
-            </div>
-        </div>
+    <div class="left">
+        <div id="map"></div>
+
+        <button id="getLocation">Get Current Location</button>
+        <button id="splitButton">Split</button>
+        <br>
+
+
+    </div>
+    <div id="targetPuzzles" class="drag-target"></div>
+    <div style="clear:both;"></div>
+    <div id="table" class="drag-target">
+
     </div>
     <script src="assets/js/main.js"></script>
 </body>
