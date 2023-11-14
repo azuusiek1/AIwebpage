@@ -1,30 +1,23 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
-    <link rel="stylesheet" href="leaflet-1.7.1/leaflet.css" />
-    <script src="leaflet-1.7.1/leaflet-src.js"></script>
-    <script src="leaflet-1.7.1/leaflet-providers.js"></script>
-    <script src="leaflet-1.7.1/leaflet-image.js"></script>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" type="text/css" href="assets/css/style.css"/>
-    <title>Document</title>
+    <title>Weather</title>
 </head>
+
 <body>
-    <div class="left">
-        <div id="map"></div>
+    <div id="wrapper">
+        <div id="searchContainer">
+            <input type="text" placeholder="Insert location..." id="location" name="location" />
+            <input type="submit" value="Search" id="getWeatherButton" />
+        </div>
+        <div id="result">
 
-        <button id="getLocation">Get Current Location</button>
-        <button id="splitButton">Split</button>
-        <br>
-
-
-    </div>
-    <div id="targetPuzzles" class="drag-target"></div>
-    <div style="clear:both;"></div>
-    <div id="table" class="drag-target">
-
+        </div>
     </div>
     <script src="assets/js/main.js"></script>
 </body>
+
 </html>
